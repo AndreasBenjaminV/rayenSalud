@@ -58,12 +58,12 @@ export async function PostNewTutorial(data) {
 	var endPoint = 'createtutorial'
 	return await resolve(endPoint, method, data)
 }
-export async function DeleteTutorial(id) {
+export async function DeleteTutorial(id, data) {
 	var method = "DELETE";
 	var endPoint = 'deletetutorial/' + id;
 	return await resolve(endPoint, method, data)
 }
-export async function DeleteTutorial(id) {
+export async function PutTutorial(id, data) {
 	var method = "PUT";
 	var endPoint = 'updatetutorial/' + id;
 	return await resolve(endPoint, method, data)
